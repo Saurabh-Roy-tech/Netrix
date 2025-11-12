@@ -1,0 +1,24 @@
+{
+  "name": "webrtc-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/server.js",
+    "dev": "nodemon src/server/server.js",
+    "client": "cd src/client && npm run dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "events": "^3.3.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
